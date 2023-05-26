@@ -1,0 +1,23 @@
+.Note{
+
+    border-left: 5px solid;
+    border-radius: 0.2rem;
+    padding-left: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    width: 20rem;
+    cursor: pointer;
+}
+
+.note-footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Note h2{
+    margin-bottom: 1rem;
+}
+
+.Note p{
+    margin-bottom: 1rem;
+}

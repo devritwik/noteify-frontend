@@ -1,0 +1,11 @@
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.logo{
+    width: 2rem;
+    margin-right: 1rem;
+}
