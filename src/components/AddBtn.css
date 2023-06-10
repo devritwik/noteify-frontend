@@ -1,22 +1,33 @@
-.CreateNote{
+.AddBtn button{
     background-color: #3D74F4;
     border-radius: 50%;
     border: none;
-    position: absolute;
     padding: 1rem;
     height: 4rem;
     width: 4rem;
     z-index: 100;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    
-    bottom: 2rem;
-    left: 2rem;
     cursor: pointer;
+    transition: 0.5s;
     
 
 }
 
-.CreateNote img{
+.AddBtn button:hover{
+    background-color: #3462cd;
+    transition: 0.5s;
+
+}
+
+.AddBtn{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.AddBtn img{
     width: 2rem;
     
 

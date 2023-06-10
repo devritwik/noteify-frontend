@@ -1,0 +1,66 @@
+.ColourSelector{
+    display: flex;
+    align-items: center;
+    justify-content: start;   
+}
+
+.ColourSelector div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-c1 {
+    background-color: #77C4ED;
+      
+}
+
+.btn-c2{
+    background-color: #9373F0;
+}
+
+.btn-c3{
+    background-color: #F35C7B;
+}
+
+.btn-c4{
+    background-color: #F3815A;
+}
+
+.btn-c5{
+    background-color: #2ddfff;
+}
+
+.btn-c1, .btn-c2, .btn-c3, .btn-c4, .btn-c5{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.btn-c1:focus{
+    border: 5px solid #3D74F4;
+    
+}
+.btn-c1:active{
+    border: 5px solid #3D74F4;
+    
+}
+.btn-c2:focus{
+    border: 5px solid #3D74F4;
+    
+}
+.btn-c3:focus{
+    border: 5px solid #3D74F4;
+
+}
+.btn-c4:focus{
+    border: 5px solid #3D74F4;
+    
+}
+.btn-c5:focus{
+    border: 5px solid #3D74F4;
+    
+}

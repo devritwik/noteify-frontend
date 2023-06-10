@@ -1,37 +1,25 @@
-.btn-c1 {
-    background-color: #77C4ED;
-      
-}
-
-.btn-c2{
-    background-color: #9373F0;
-}
-
-.btn-c3{
-    background-color: #F35C7B;
-}
-
-.btn-c4{
-    background-color: #F3815A;
-}
-
-.btn-c5{
-    background-color: #D8477F;
-}
-
-.btn-c1, .btn-c2, .btn-c3, .btn-c4, .btn-c5{
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    border: none;
+.Clear{
+    margin: 0.5rem;
     cursor: pointer;
+    background: none;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    border: none;
+    text-decoration: none;
+}
+.All:focus{
+    border: 2px solid #3D74F4;
 }
 
-.NoteFilter div{
-
-    width: 20%;
-    margin: auto;
+.NoteFilter > div{
     display: flex;
-    justify-content: space-around;
-    padding: 2rem;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
 }

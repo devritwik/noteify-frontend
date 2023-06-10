@@ -1,0 +1,9 @@
+.PopMessage{
+    padding: 1rem;
+    background-color: rgb(119, 78, 255);
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    color: white;
+    font-size: 2rem;
+}

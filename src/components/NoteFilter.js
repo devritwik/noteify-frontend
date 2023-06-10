@@ -1,16 +1,23 @@
+import { useState } from 'react';
+import Colours from './Colours'
 import './NoteFilter.css'
-function NoteFilter(){
+
+function NoteFilter({filterHandler}){
+
+    let [filteredColour, setFilteredColour] = useState(256);
+    filterHandler(filteredColour);
 
     return(
         <div className="NoteFilter">
             <div>
-            <button>All</button>
-            <button className="btn-c1"></button>
-            <button className="btn-c2"></button>
-            <button className="btn-c3"></button>
-            <button className="btn-c4"></button>
-            <button className="btn-c5"></button>
-
+            <Colours colour={filteredColour} colourChangeHandler={setFilteredColour}/>
+            <button className='Clear' onClick={
+                (e)=>{
+                    filterHandler(256);
+                    console.log("Clear is clicked");
+                    setFilteredColour(256);
+                    filterHandler(256);
+                    }}> Clear Filter </button>
             </div>
             
         </div>

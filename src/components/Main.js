@@ -1,24 +1,9 @@
-import Note from "./Note";
-import NoteFilter from "./NoteFilter";
-import CreateNote from "./CreateNote";
+import { Outlet } from "react-router-dom";
+
 function Main(){
-
-    //Fetch All Notes
-    //Display All Notes
-    let note = {
-        title: "This is note title",
-        body: "Thisi is note body",
-        author: "@ritwikdax",
-        date: new Date().toDateString()
-    }
-
-
-
     return (
         <div>
-            <NoteFilter/>
-            <Note notes={note}/>
-            <CreateNote/>
+            <Outlet/>
         </div>
     );
 }

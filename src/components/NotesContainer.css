@@ -1,0 +1,15 @@
+.NotesContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    flex-wrap: wrap;
+    flex: 25%;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 4rem;
+}
+

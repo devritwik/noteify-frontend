@@ -3,11 +3,35 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ErrorPage from './pages/ErrorPage';
+import NoteEditor from './pages/NoteEditor';
+import DisplayNotes from './pages/DisplayNotes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    errorElement: <ErrorPage/>,
+    children: [
+      {
+        path: "/",
+        element: <DisplayNotes/>
+      },
+      {
+        path: "/edit-note",
+        element: <NoteEditor/>
+      }
+    ]
+  }
+]);
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,74 @@
+
+/* The container */
+.container {
+    display: inline;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0.5rem;
+
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    
+  }
+  
+  /* Create a custom radio button */
+.rb1, .rb2, .rb3, .rb4, .rb5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+
+.rb1{
+    background-color: #77C4ED;
+}
+
+.rb2{
+    background-color: #9373EF;
+}
+.rb3{
+    background-color: #F25C7B;
+}
+.rb4{
+    background-color: #F3815A;
+}
+.rb5{
+    background-color: #2DDFFF;
+}
+
+
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .rb1{
+   
+    border: 0.3rem solid #2196f3;
+  }
+  .container input:checked ~ .rb2{
+    border: 0.3rem solid #2196f3;
+  }
+  .container input:checked ~ .rb3{
+    border: 0.3rem solid #2196f3;
+  }
+  .container input:checked ~ .rb4{
+    border: 0.3rem solid #2196f3;
+  }
+  .container input:checked ~ .rb5{
+    border: 0.3rem solid #2196f3;
+  }
+  
